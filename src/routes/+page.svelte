@@ -14,7 +14,7 @@
           data-aos-delay="150"
           style="--color-text: var(--color-orange-700)"
         >
-          The website you've been looking for
+          Learn about hardware quick
         </h1>
 
         <div class="mx-auto max-w-3xl">
