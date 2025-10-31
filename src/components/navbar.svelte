@@ -6,7 +6,7 @@
         <li>
           <a
             href="/signin"
-            class="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+            class="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50 py-2 px-3"
           >
             Login
           </a>
@@ -14,7 +14,7 @@
         <li>
           <a
             href="/signup"
-            class="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
+            class="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900 py-2 px-3"
           >
             Register
           </a>
