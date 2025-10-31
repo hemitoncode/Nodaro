@@ -4,7 +4,7 @@
 </script>
 
 <section class="relative">
-    <PageIllustration />
+  <PageIllustration />
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
     <!-- Hero content -->
     <div class="pb-12 pt-32 md:pb-20 md:pt-40">
