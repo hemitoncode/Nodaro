@@ -1,20 +1,3 @@
-<script>
-  import Stripes from "../public/stripes.png";
-</script>
-
-<!-- Stripes illustration -->
-<div
-  class="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 transform"
-  aria-hidden="true"
->
-  <img
-    class="max-w-none"
-    src={Stripes}
-    width="768"
-    alt="Stripes"
-  />
-</div>
-
 <!-- Circles -->
 <div
   class="pointer-events-none absolute -top-32 left-1/2 ml-[580px] -translate-x-1/2"

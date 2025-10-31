@@ -1,6 +1,5 @@
 <script>
     import PageIllustration from "../components/page-illustration.svelte";
-    import '../app.css';
 </script>
 
 <section class="relative">
