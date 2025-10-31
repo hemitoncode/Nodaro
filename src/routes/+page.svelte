@@ -14,7 +14,7 @@
           data-aos-delay="150"
           style="--color-text: var(--color-orange-700)"
         >
-          Learn about hardware quick
+          Learn about hardware <span class="text-orange-500 underline font-bold">quickly</span>
         </h1>
 
         <div class="mx-auto max-w-3xl">
