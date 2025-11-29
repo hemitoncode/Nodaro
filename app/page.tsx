@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+"use client"
+
+import { useState } from 'react';
 import { Menu, X, ChevronRight, Calendar, BookOpen, Users, Mail, Youtube, Twitter, Linkedin, Github } from 'lucide-react';
 
 export default function NodoroLanding() {
