@@ -1,17 +1,22 @@
 "use client"
 
 import { useState } from 'react';
-import { Menu, X, ChevronRight, Calendar, BookOpen, Users, Mail, Youtube, Twitter, Linkedin, Github } from 'lucide-react';
+import { 
+  Menu,
+  X, 
+  ChevronRight, 
+  Mail, 
+  Youtube,
+  Twitter, 
+  Linkedin, 
+  Github 
+} from 'lucide-react';
 
 export default function NodoroLanding() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Tutorials', href: '#tutorials' },
-    { name: 'Events', href: '#events' },
-    { name: 'Journal', href: '#journal' },
-    { name: 'Join Us', href: '#join' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -20,25 +25,6 @@ export default function NodoroLanding() {
     { title: 'Collaboration', description: 'Building together as a community' },
     { title: 'Excellence', description: 'Striving for the highest standards' },
     { title: 'Impact', description: 'Creating meaningful change in our field' }
-  ];
-
-  const tutorials = [
-    { category: 'Hardware', title: 'Introduction to Arduino', duration: '45 min' },
-    { category: 'Hardware', title: 'Raspberry Pi Setup', duration: '30 min' },
-    { category: 'Software', title: 'Python Basics', duration: '60 min' },
-    { category: 'Software', title: 'Web Development 101', duration: '90 min' }
-  ];
-
-  const events = [
-    { title: 'Tech Workshop: AI Fundamentals', date: 'Dec 15, 2025', type: 'Workshop' },
-    { title: 'Annual Hackathon 2025', date: 'Jan 20-21, 2026', type: 'Competition' },
-    { title: 'Guest Speaker Series', date: 'Feb 5, 2026', type: 'Seminar' }
-  ];
-
-  const publications = [
-    { title: 'Machine Learning in Edge Computing', author: 'Sarah Chen', date: 'Nov 2025', category: 'Research' },
-    { title: 'Sustainable IoT Solutions', author: 'Marcus Johnson', date: 'Oct 2025', category: 'Projects' },
-    { title: 'Quantum Computing Primer', author: 'Alex Rivera', date: 'Sep 2025', category: 'Tutorial' }
   ];
 
   return (
@@ -99,11 +85,11 @@ export default function NodoroLanding() {
             Empowering innovation through technology, education, and collaboration. Join us in shaping the future.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#join" className="bg-gradient-to-r from-orange-600 to-amber-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105">
-              Get Involved
-            </a>
-            <a href="#about" className="bg-white text-orange-600 px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all border-2 border-orange-600">
+            <a href="#about" className="bg-gradient-to-r from-orange-600 to-amber-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105">
               Learn More
+            </a>
+            <a href="#contact" className="bg-white text-orange-600 px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all border-2 border-orange-600">
+              Contact Us
             </a>
           </div>
         </div>
@@ -155,128 +141,11 @@ export default function NodoroLanding() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-orange-500 to-amber-500 p-8 rounded-2xl text-white">
-              <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
-              <div className="space-y-4">
-                <a href="#tutorials" className="flex items-center justify-between p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
-                  <span className="font-semibold">Browse Tutorials</span>
-                  <ChevronRight />
-                </a>
-                <a href="#events" className="flex items-center justify-between p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
-                  <span className="font-semibold">Upcoming Events</span>
-                  <ChevronRight />
-                </a>
-                <a href="#journal" className="flex items-center justify-between p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
-                  <span className="font-semibold">Read Our Journal</span>
-                  <ChevronRight />
-                </a>
-              </div>
+              <h3 className="text-2xl font-bold mb-6">Our Mission</h3>
+              <p className="text-lg leading-relaxed">
+                We believe in the power of technology to transform lives and solve complex challenges. Our mission is to create an inclusive community where innovation thrives and knowledge is freely shared.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Tutorials Section */}
-      <section id="tutorials" className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Tutorials</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {tutorials.map((tutorial, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-xl hover:shadow-lg transition-shadow cursor-pointer">
-                <span className="inline-block px-3 py-1 bg-orange-600 text-white text-sm rounded-full mb-4">
-                  {tutorial.category}
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{tutorial.title}</h3>
-                <p className="text-gray-600">{tutorial.duration}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-orange-600 to-amber-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl transition-all">
-              View All Tutorials
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Events Section */}
-      <section id="events" className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Upcoming Events</h2>
-          <div className="space-y-6">
-            {events.map((event, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow flex flex-col md:flex-row justify-between items-start md:items-center">
-                <div className="flex items-start mb-4 md:mb-0">
-                  <Calendar className="text-orange-600 mt-1 mr-4" size={24} />
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-1">{event.title}</h3>
-                    <p className="text-gray-600">{event.date}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <span className="px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold">
-                    {event.type}
-                  </span>
-                  <button className="text-orange-600 hover:text-orange-700 font-semibold">
-                    Learn More →
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Journal Section */}
-      <section id="journal" className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Journal & Publications</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {publications.map((pub, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-xl hover:shadow-lg transition-shadow cursor-pointer">
-                <span className="inline-block px-3 py-1 bg-orange-600 text-white text-xs rounded-full mb-4">
-                  {pub.category}
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{pub.title}</h3>
-                <div className="text-sm text-gray-600">
-                  <p>By {pub.author}</p>
-                  <p>{pub.date}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-orange-600 to-amber-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl transition-all">
-              View All Publications
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Join Us Section */}
-      <section id="join" className="py-20 px-4 bg-gradient-to-br from-orange-500 to-amber-500">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <Users className="mx-auto mb-6" size={64} />
-          <h2 className="text-4xl font-bold mb-6">Join Our Community</h2>
-          <p className="text-xl mb-8">
-            Be part of something bigger. Whether you&apos;re a student, professional, or enthusiast, there&apos;s a place for you at Nodaro.
-          </p>
-          <div className="bg-white p-8 rounded-2xl text-gray-900 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-6 text-orange-600">Application Form</h3>
-            <form className="space-y-4">
-              <input type="text" placeholder="Full Name" className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-transparent" />
-              <input type="email" placeholder="Email Address" className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-transparent" />
-              <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-transparent">
-                <option>Select Interest Area</option>
-                <option>Hardware Projects</option>
-                <option>Software Development</option>
-                <option>Research & Publications</option>
-                <option>Event Organization</option>
-              </select>
-              <textarea placeholder="Tell us about yourself and why you want to join..." rows={4} className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-transparent"></textarea>
-              <button type="submit" className="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white py-3 rounded-lg font-semibold hover:shadow-xl transition-all">
-                Submit Application
-              </button>
-            </form>
           </div>
         </div>
       </section>
